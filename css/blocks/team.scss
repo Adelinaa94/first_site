@@ -1,0 +1,86 @@
+.team {
+    background: url(/img/bg/team-bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: rgba(#3e4042, .93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__acco-item--active {
+    .team__acco-trigger {
+        color: $yellow;
+
+        &:before {
+            transform: rotate(180deg);
+        }
+    }
+    .team__acco-content {
+        height: auto;
+    }
+}
+
+.team__content {
+    width: 70%;
+}
+
+.team__acco-text {
+    color: #fff;
+}
+
+.team__acco-content {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+
+.team__acco-pic {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.team__acco-article-title {
+    @include Ubuntubold();
+    font-size: 14px;
+}
+
+.team__acco-article-content {
+    @include Ubuntulight();
+    font-size: 14px;
+}
+
+.team__acco-trigger {
+    font-size: 14px;
+    color: #fff;
+    @include Gagalin();
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 40px;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border: 9px solid transparent;
+        border-bottom-width: 0;
+        border-top-color: $yellow;
+        margin-right: 10px;
+        
+    }
+}
+

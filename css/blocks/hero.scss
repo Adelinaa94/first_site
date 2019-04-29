@@ -1,0 +1,76 @@
+.hero {
+    background: url('/img/bg/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.hero__container {
+    justify-content: flex-start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+    &:after {
+        content: '';
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: #fff;
+        display: block;
+        margin: 0 15px;
+    }
+}
+
+.nav__item__last-child {
+    &:after {
+        display: none;
+    }
+}
+
+.nav__link {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include Ubunturegular();
+}
+
+.btn {
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.hero__content {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__pic, .hero__desc {
+    width: 50%;
+}
+
+.hero__desc-text {
+    @include Lifehack();
+    font-size: 65px;
+    color: #fff;
+    text-transform: lowercase;  
+}
