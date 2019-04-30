@@ -14,6 +14,11 @@
     background-position: center center;
     position: relative;
 
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
+
     &:hover {
         .reviews__hover{
             opacity: 1;
@@ -37,17 +42,17 @@
 .reviews__title {
     color: #fff;
     @include Gagalin();
-    margin-left: 20px;
-    margin-top: 50px;
-    font-size: 14px;
+    margin-left: rem(20px);
+    margin-top: rem(50px);
+    font-size: rem(14px);
 }
 
 .reviews__text {
     color: #fff;
     @include Ubuntulight();
-    font-size: 14px;
-    margin-left: 20px;
-    margin-top: 30px;
+    font-size: rem(14px);
+    margin-left: rem(20px);
+    margin-top: rem(30px);
 }
 
 

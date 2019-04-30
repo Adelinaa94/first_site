@@ -1,9 +1,10 @@
 .hero {
     background: url('/img/bg/hero-bg.jpg') center center no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.hero__container {
+.container {
     justify-content: flex-start;
 }
 
@@ -11,12 +12,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: rem(10px);
 }
 
 .header__btns {
     display: flex;
     align-items: center;
+}
+
+.header__menu {
+    @include tablets {
+        display: none;
+    }
 }
 
 .nav__list {
@@ -29,12 +36,12 @@
     align-items: center;
     &:after {
         content: '';
-        width: 3px;
-        height: 3px;
+        width: rem(3px);
+        height: rem(3px);
         border-radius: 50%;
         background: #fff;
         display: block;
-        margin: 0 15px;
+        margin: 0 rem(15px);
     }
 }
 
@@ -46,31 +53,79 @@
 
 .nav__link {
     color: #fff;
-    font-size: 13px;
+    font-size: rem(13px);
     text-transform: uppercase;
     text-decoration: none;
     @include Ubunturegular();
 }
 
 .btn {
-    margin-left: 15px;
-    padding-top: 15px;
+    margin-left: rem(15px);
+    padding-top: rem(15px);
+}
+
+.hero__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15%;
 }
 
 .hero__content {
-    flex: 0.8;
     display: flex;
-    align-items: center;
-    justify-content: center;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-.hero__pic, .hero__desc {
+.hero__left, .hero__right {
     width: 50%;
+    
+    @include tablets {
+        width: 80%;
+        text-align: center;
+    }
+
+    @include phones {
+        width: 90%;
+    }
 }
 
-.hero__desc-text {
-    @include Lifehack();
-    font-size: 65px;
-    color: #fff;
-    text-transform: lowercase;  
+.hero__pic {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;  
 }
+
+.hero__right {
+    padding-top: rem(115px);
+
+    @include tablets {
+        padding-top: 0;
+    }
+}
+
+.hero__desc {
+    font-size: rem(65px);
+    color: #fff;
+    @include Lifehack();
+    text-transform: lowercase;  
+    line-height: 1em;
+
+    @include tablets {
+        padding-bottom: rem(200px);
+    }
+
+    @include phones {
+        font-size: rem(54px);
+    }
+}
+

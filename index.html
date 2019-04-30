@@ -12,50 +12,61 @@
 <body>
     <div class='wrapper'>
         <div class="maincontent">
+
             <section class="section hero">
-                <div class="container hero__container">
+                <div class="container">
                     <header class="header">
-                        <a class="logo">
-                            <img src='/img/logo/logo.png' alt='Логотип' class='logo__pic'>
-                        </a>
+                        <div class="header__logo">
+                            <a class="logo" href='a'><img src='/img/logo/logo.png' alt='Логотип' class='logo__pic'></a>
+                        </div>
                         <div class="header__btns">
-                            <nav class="nav">
-                                <ul class="nav__list">
-                                    <li class="nav__item">
-                                        <a href="#" class="nav__link">о нас</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a href="#" class="nav__link">бургеры</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a href="#" class="nav__link">команда</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a href="#" class="nav__link">меню</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a href="#" class="nav__link">отзывы</a>
-                                    </li>
-                                    <li class="nav__item">
-                                        <a href="#" class="nav__link">как мы работаем</a>
-                                    </li>
-                                    <li class="nav__item__last-child">
-                                        <a href="#" class="nav__link">контакты</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            <div class="header__menu">
+                                <nav class="nav">
+                                    <ul class="nav__list">
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">о нас</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">бургеры</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">команда</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">меню</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">отзывы</a>
+                                        </li>
+                                        <li class="nav__item">
+                                            <a href="#" class="nav__link">как мы работаем</a>
+                                        </li>
+                                        <li class="nav__item__last-child">
+                                            <a href="#" class="nav__link">контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>                 
                             <a href="" class="btn-header">Заказать</a>
                         </div>
                     </header>
-                    <div class="hero__content">
-                        <div class="hero__pic">
-                            <img src="img/content/burger.png" alt="Бургер" class="hero__pic-img">
+                    <div class="hero__container">
+                        <div class="hero__content">
+                            <div class="hero__left">
+                                <div class="hero__pic">
+                                    <img src="img/content/burger.png" alt="Бургер" class="hero__pic-img">
+                                </div>
+                            </div>
+                            <div class="hero__right">
+                                <div class="section__title">
+                                    <h1 class="section-title">Мы делаем</h1>
+                                </div>
+                                <div class="hero__desc">
+                                    <div class="hero__desc-text">Натуральные бургеры</div>
+                                </div> 
+                            </div>
                         </div>
-                        <div class="hero__desc">
-                            <h1 class="section-title">Мы делаем</h1>
-                            <div class="hero__desc-text">Натуральные бургеры</div>
-                        </div>
-                    </div>
+                    </div>  
                 </div>
                 <a href="#" class="go-down-btn"></a>
             </section>
@@ -117,7 +128,9 @@
                 <section class="section team">
                     <div class="team__container">
                         <div class="team__content">
-                            <h2 class="section-title">Команда</h2>
+                            <div class="section__title">
+                                <h2 class="section-title">Команда</h2>
+                            </div>
                             <ul class="team__acco">
                                 <li class="team__acco-item">
                                    <a href="" class="team__acco-trigger">
@@ -137,7 +150,7 @@
                                        </div>
                                    </div>
                                 </li>
-                                <li class="team__acco-item team__acco-item--active">
+                                <li class="team__acco-item team__acco-item_active">
                                         <a href="" class="team__acco-trigger">
                                             Ричард Джеймс
                                         </a> 
@@ -194,7 +207,17 @@
                             </ul>
                         </div>
                     </div>
+                </section>
 
+                
+                <section class="section">
+                    <div class="section__title">
+                        <div class="section__title_white">
+                            <h2 class="menu__title">Меню</h2>
+                        </div>
+                    </div>
+                  
+                    </div>
                 </section>
 
                 <section class="section reviews">
@@ -334,18 +357,37 @@
                 <section class="section contacts">
                     <div class="container">
                         <div class="map"></div>
-                        <div class="footer">
-                            <div class="footer__pic">
-                                <img src='/img/content/footer.jpg'>
-                            </div>
-                            <div class="footer__left"></div>
-                            <div class="footer__right"></div>
-                        </div>
+                       
                     </div>
 
                 </section>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__row">
+                            <div class="footer__col">
+                                <div class="adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                                <a href="tel: +7 (812) 377-13-77" class="footer-tel">
+                                    <div class="footer-tel__icon">
+                                                 <svg class='phone-icon'>
+                                                    <use xlink href='./icons/sprite/sprite.svg#phone'></use>
+                                                </svg>
+                                    </div>
+                                    <div class="footer-tel__text">+7 (812) 377-13-77</div>
+                                </a>
+                            </div>
+                            <div class="footer__col">
+                                <ul class="socials">
+                                    <li class="social">
+                                            <svg class='social-icon'>
+                                                    <use xlink href='./icons/sprite/sprite.svg#vk'></use>
+                                                </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 
-                <section class="section"></section>
 
                 <section class="section"></section>
 

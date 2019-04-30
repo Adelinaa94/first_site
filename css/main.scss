@@ -4,6 +4,13 @@ $yellow: #f9b43b;
 $black: #2f3234;
 $grey: #6a6a6b;
 
+//resolutions
+$tablets: 768px;
+$phones: 480px;
+
+//media
+@import './_misc/media.scss';
+
 // setups
 @import '_misc/mixins.scss';
 @import '_misc/fonts.scss';
@@ -16,6 +23,7 @@ $grey: #6a6a6b;
 @import 'blocks/reviews.scss';
 @import 'blocks/order.scss';
 @import 'blocks/contacts.scss';
+@import 'blocks/footer';
 
 // common blocks
 @import 'common/btn.scss';

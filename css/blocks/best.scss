@@ -3,6 +3,10 @@
     background-size: cover;
 }
 
+.container {
+    justify-content: center;
+}
+
 .best__list {
     display: flex;
     justify-content: space-between;
@@ -23,18 +27,18 @@
 
 .best__title {
     @include Lifehack();
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    font-size: rem(24px);
+    margin-bottom: rem(20px);
+    margin-top: rem(30px);
 }
 
 .best__desc {
     @include Ubuntulight();
-    font-size: 14px;
+    font-size: rem(14px);
     color: $grey;
 }
 
 .best__icon {
-    width: 100px;
-    height: 90px;
+    width: rem(100px);
+    height: rem(90px);
 }

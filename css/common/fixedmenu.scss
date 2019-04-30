@@ -1,17 +1,17 @@
 .fixed-menu {
     position: fixed;
-    top: 90px;
-    right: 50px;
+    top: rem(90px);
+    right: rem(50px);
 }
 
 .fixed-menu__item {
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .fixed-menu__link {
     display: flex;
-    width: 20px;
-    height: 20px;
+    width: rem(20px);
+    height: rem(20px);
     border-radius: 50%;
     position: relative;
 
@@ -21,8 +21,8 @@
 
     &::before {
         content: "";
-        width: 7px;
-        height: 7px;
+        width: rem(7px);
+        height: rem(7px);
         display: block;
         border-radius: 50%;
         background: #fff;
