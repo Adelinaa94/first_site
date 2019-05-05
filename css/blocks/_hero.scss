@@ -1,0 +1,165 @@
+.hero {
+    background: url('/img/bg/hero-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero__wrapper {
+    @include tablets {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+.container {
+    justify-content: flex-start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: rem(50px);
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    flex: 1;
+    text-align: right;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+
+    &:after {
+        content: '';
+        width: rem(3px);
+        height: rem(3px);
+        border-radius: 50%;
+        background: #fff;
+        display: block;
+        margin: 0 rem(15px);
+    }
+}
+
+.nav__item__last-child {
+    &:after {
+        display: none;
+    }
+}
+
+.nav__link {
+    color: #fff;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    text-decoration: none;
+    @include Ubunturegular();
+}
+
+.btn {
+    padding-top: rem(15px);
+}
+
+.btn-header{
+    @include tablets {
+        padding-top: rem(25px);
+        margin-right: rem(85px); 
+    }
+}
+
+.hero__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.hero__content {
+    display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.hero__left, .hero__right {
+    width: 50%;
+    
+    @include tablets {
+        width: 80%;
+        text-align: center;
+    }
+
+    @include phones {
+        width: 80%;
+    }
+}
+
+.hero__pic {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero__right {
+    padding-top: rem(115px);
+    
+
+    @include tablets {
+        padding-top: 0;
+    }
+}
+
+.section__title__hero {
+    margin-bottom: rem(-50px);
+}
+
+
+.hero__desc {
+    font-size: rem(65px);
+    color: #fff;
+    @include Lifehack();
+    text-transform: lowercase;  
+    line-height: 1em;
+
+    @include tablets {
+        text-align: center;
+    }
+
+    @include phones {
+        font-size: rem(54px);
+    }
+}
+
+.go-down-btn__pic {
+    width: rem(30px); 
+    padding-bottom: rem(10px); 
+    margin-left: 48%;
+    cursor: pointer;
+
+}
+
+.go-down-btn__icon {
+    fill: #fff; 
+}
+
+

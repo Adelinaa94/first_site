@@ -1,0 +1,45 @@
+.btn {
+    font-size: rem(13px);
+    background: #2f3234;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    border-radius: rem(4px);
+    text-decoration: none;
+    @include Ubunturegular();
+    margin-left: rem(20px);
+    margin-top: rem(20px);
+    padding: rem(13px);
+    transition: .2s;
+    &:hover{
+        transition: .2s;
+        background: #1f2122;
+    }
+}
+.btn-header {
+    font-size: rem(13px);
+    background: $orange;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    border-radius: rem(4px);
+    text-decoration: none;
+    @include Ubunturegular();
+    padding: rem(13px);
+    margin-left: rem(15px);
+}
+
+.btn-order {
+    font-size: rem(13px);
+    background: $orange;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    border-radius: rem(4px);
+    text-decoration: none;
+    @include Ubunturegular();
+    padding: rem(13px);
+    margin-right: rem(20px);
+    border: none;
+    cursor: pointer;
+}

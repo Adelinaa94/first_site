@@ -1,12 +1,15 @@
 .section-title {
     font-size: rem(72px);
     color: $yellow;
-    margin-bottom: rem(50px);
     @include Gagalin();
 
     &_color {
         &_black {
             color: $black;
+        }
+
+        &_white {
+            color: #fff;
         }
     }
 
@@ -16,9 +19,6 @@
         }
     }
 
-    &.section__title_white {
-        color: white;
-    }
 
     @include phones {
         font-size: rem(63px);
