@@ -9,15 +9,15 @@ $tablets: 768px;
 $phones: 480px;
 
 //media
-@import './_misc/media';
+@import '_misc/media.scss';
 
 // setups
-@import './_misc/fonts';
-@import './_misc/layout';
-@import './_misc/mixins';
+@import '_misc/fonts.scss';
+@import '_misc/layout.scss';
+@import '_misc/mixins.scss';
 
 // blocks
-@import './blocks/hero';
+@import 'blocks/hero.scss';
 @import 'blocks/best.scss';
 @import 'blocks/team.scss';
 @import 'blocks/contacts.scss';
@@ -26,7 +26,6 @@ $phones: 480px;
 @import 'blocks/footer.scss';
 @import 'blocks/menu.scss';
 @import 'blocks/hamburger-menu-link.scss';
-@import 'blocks/slider.scss';
 @import 'blocks/burger__slider.scss';
 
 // common blocks

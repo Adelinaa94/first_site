@@ -1,22 +1,20 @@
+.ham-btn {
+    display: none;
+    @include tablets {
+        display: block;
+    }
+}
 .hamburger-menu-link {
     vertical-align: middle;
     position: relative;
     height: rem(22px);
     align-items: center;
     display: none;
+    cursor: pointer;
 
     @include tablets {
         display: flex;
         justify-content: flex-end;
-        margin-top: rem(-50px);
-        margin-right: rem(25px);
-        cursor: pointer;
-
-        &:active {
-            .nav__list-hidden li a {  
-                display: block; 
-            }
-        }
     }
 }
 
