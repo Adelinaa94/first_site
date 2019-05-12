@@ -3,18 +3,37 @@
     background-size: cover;
 }
 
-.slider__container {
+.burgerslider__maincontent {
     display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 14%;
-    padding-top: 14%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.go-right-btn__pic, .go-left-btn__pic {
+    width: rem(30px); 
+    cursor: pointer;
+}
+
+.go-btn {
+    fill: #fff; 
+}
+
+.go-right-btn__pic {
+    transform: rotate(-90deg);
+    margin-right: rem(45px);
+}
+
+.go-left-btn__pic {
+    transform: rotate(90deg);
+    margin-left: rem(45px);
 }
 
 .slider__content {
     display: flex;
     align-items: center;
+    justify-content: center;
+  
 
     @include tablets {
         flex-direction: column;
@@ -24,11 +43,13 @@
 }
 
 .icons {
-    padding-left: rem(80px);
     @include Gagalin();
     font-size: rem(14px);
     text-transform: uppercase;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-right: rem(-45px);
 }
 
 .btn__ingredients {
@@ -42,11 +63,16 @@
     height: rem(90px);
     fill: #fef7f1;
     color: #fef7f1;
+    margin-bottom: rem(270px);
 }
 
 .ingredients__icon {
-    height: rem(40px);
+    height: rem(60px);
     padding-top: rem(15px);
+}
+
+.ingr__text {
+    margin-top: rem(5px);
 }
 
 .icon__kkal {
@@ -64,12 +90,24 @@
 
 .kkal__icon {
     height: rem(60px);
+    position: relative;
+}
+
+.kkal__numbers{
+    position: absolute;
+    margin-top: rem(25px);
+    margin-left: rem(13px);
+    font-size: rem(20px);
+}
+
+.kkal_text {
+    margin-left: rem(15px);
 }
 
 .content__left, .content__right {
     justify-content: center;
-    width: rem(450px);
-    
+    width: 50%;
+      
     @include tablets {
         width: 80%;
         text-align: center;
@@ -81,18 +119,16 @@
 }
 
 .content__left {
-    display: flex;
+    display: flex;  
 }
 
 .content__right {
-    display: block;
+    display: block;  
 }
 
 .slider__pic {
     justify-content: flex-end;
     align-items: center;
-    position: relative;
-    width: 100%;
 }
 
 .section__title {

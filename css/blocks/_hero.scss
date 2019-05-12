@@ -11,9 +11,6 @@
     }
 }
 
-.container {
-    justify-content: flex-start;
-}
 
 .header {
     display: flex;
@@ -41,6 +38,11 @@
         right: 0;
     }
 }
+
+.btn-header {
+    margin-right: rem(15px);
+}
+
 .btn-header-order,.header__menu {
     @include tablets{
         position: absolute;
@@ -74,8 +76,9 @@
     @include tablets {
         display: flex;
         flex-direction: column;
-        padding-left: 42%;
-        padding-top: rem(185px);
+        padding-left: 40%;
+        align-items: center;
+        justify-content: center;
         
     }
 }
@@ -85,7 +88,7 @@
     align-items: center;
     @include tablets {
         position: relative;
-        margin-bottom: rem(60px);
+        height: rem(70px);
     }
 
     &:after {
@@ -96,15 +99,27 @@
         background: #fff;
         display: block;
         margin: 0 rem(15px);
+        
 
         @include tablets {
-            position: absolute;
-            margin: 50% 50%;
+            width: rem(7px);
+            height: rem(7px);
+            position: absolute;          
+            margin: 0;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            margin-right: -50%;
         }
     }
 }
 
 .nav__item__last-child {
+
+    @include tablets {
+        position: relative;
+        margin-top: rem(13px);
+    }
     &:after {
         display: none;
     }
@@ -116,20 +131,24 @@
     text-transform: uppercase;
     text-decoration: none;
     @include Ubunturegular();
+
+    @include tablets {
+        font-size: rem(24px);
+    }
 }
-
-
 
 .hero__container {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
+    padding-top: 10%;
 }
 
 .hero__content {
     display: flex;
+    align-items: center;
 
     @include tablets {
         flex-direction: column;
@@ -191,10 +210,11 @@
 
 .go-down-btn__pic {
     width: rem(30px); 
-    padding-bottom: rem(10px); 
     margin-left: 48%;
     cursor: pointer;
-
+    @include tablets {
+        margin-top: rem(-40px);
+    }  
 }
 
 .go-down-btn__icon {
@@ -204,7 +224,7 @@
 .cross_btn {
     display: none;
     position: absolute;
-    top: rem(30px);
+    top: rem(15px);
     right: rem(35px);
     width: rem(20px);
     height: rem(20px);

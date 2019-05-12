@@ -2,6 +2,7 @@
     display: none;
     @include tablets {
         display: block;
+        padding-right: rem(25px);
     }
 }
 .hamburger-menu-link {

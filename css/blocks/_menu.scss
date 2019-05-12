@@ -1,5 +1,59 @@
 .menu {
     background: url(/img/bg/bg-menu.jpg) center center no-repeat;
     background-size: cover;
+    position: relative;
+}
+.container_position_static{
+    position: static;
+}
+.menu-content{
+    display: flex;
+}
+.menu__left{
+    width: 25%;
+}
+.menu__right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu__item-right{
+    display: none;
+}
+.menu__list{
+    height: 100%;
+    display: flex;
+}
+.menu-line__title{
+    transform: rotate(-90deg);
+    text-align: center;
+    transform-origin: center;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 20%;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: 'Gagalin', Helvetica, sans-serif;
+    right: -102%;
+
 }
 
+.menu-line{
+    width: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.menu__item-left{
+    height: 100%;
+}
+.menu__item{
+    height: 100%;
+}
