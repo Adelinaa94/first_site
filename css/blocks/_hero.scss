@@ -85,7 +85,7 @@
     align-items: center;
     @include tablets {
         position: relative;
-        margin-bottom: rem(60px);
+        height: 70px;
     }
 
     &:after {
@@ -96,15 +96,25 @@
         background: #fff;
         display: block;
         margin: 0 rem(15px);
+        
 
         @include tablets {
-            position: absolute;
-            margin: 50% 50%;
+            position: absolute;          
+            margin: 0;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            margin-right: -50%;
         }
     }
 }
 
 .nav__item__last-child {
+
+    @include tablets {
+        position: relative;
+        margin-top: 25px;
+    }
     &:after {
         display: none;
     }
