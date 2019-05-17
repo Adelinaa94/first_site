@@ -3,9 +3,12 @@ $( document ).ready(function() {
         $(this).children(".label").addClass("label--active");
         $(this).siblings().children(".label").removeClass("label--active");
    });
+<<<<<<< HEAD
 
 
    
+=======
+>>>>>>> master
 });
 
 var btn = document.querySelector('.ham-btn');
