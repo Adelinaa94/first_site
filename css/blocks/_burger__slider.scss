@@ -5,20 +5,11 @@
 
 .burgerslider__maincontent {
     display: flex;
-<<<<<<< HEAD
     height: 100%;
     align-items: center;
 }
 
 
-=======
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
->>>>>>> master
 .go-right-btn__pic, .go-left-btn__pic {
     width: rem(30px); 
     cursor: pointer;
@@ -30,18 +21,12 @@
 
 .go-right-btn__pic {
     transform: rotate(-90deg);
-<<<<<<< HEAD
     margin-right: rem(45px);
-=======
->>>>>>> master
 }
 
 .go-left-btn__pic {
     transform: rotate(90deg);
-<<<<<<< HEAD
     margin-left: rem(45px);
-=======
->>>>>>> master
 }
 
 .slider__content {
@@ -64,12 +49,7 @@
     text-decoration: none;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     margin-right: rem(-45px);
-=======
-    margin-right: rem(-90px);
-    margin-left: rem(70px);
->>>>>>> master
 }
 
 .btn__ingredients {
@@ -126,14 +106,8 @@
 
 .content__left, .content__right {
     justify-content: center;
-<<<<<<< HEAD
     width: 50%;
       
-=======
-    width: rem(450px);
-    
-    
->>>>>>> master
     @include tablets {
         width: 80%;
         text-align: center;

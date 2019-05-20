@@ -1,41 +1,79 @@
-.footer{
+.footer {
     padding-top: 12px;
     padding-bottom: 12px;
     background: url('/img/content/footer.jpg') center center no-repeat;
     background-size: cover;
 }
-.footer__row{
+
+.footer__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: rem(80px);
+    padding-right: rem(80px);
 }
-.adress{
+
+.address {
     font-size: 14px;
-    font-family: "Myriad Pro";
+    @include Ubuntulight();
     color: rgb(255, 255, 255);
     margin-bottom: 10px;
 }
-.footer-tel{
+
+.footer-tel {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
-.phone-icon{
+
+.phone-icon {
     width: 14px;
     height: 14px;
     fill: #e35028;
     margin-right: 5px;
 }
-.footer-tel__text{
+
+.footer-tel__text {
     font-size: 14px;
-    font-family: "Myriad Pro";
+    @include Ubuntubold();
     color: #e35028;
 }
-.socials{
-    display: flex;
 
+.socials {
+    display: flex;
+    margin-right: rem(20px);
 }
-.social-icon{
-    width: 30px;
-    height: 15px;
+
+.social-icon {
+    margin-right: rem(20px);
+    cursor: pointer;
+
+    &:hover {
+        fill: #fff; 
+    }
+}
+
+
+.social-icon1 {
+    width: rem(30px);
+    height: rem(15px);
+    fill: #595959;
+}
+
+.social-icon2 {
+    width: rem(20px);
+    height: rem(20px);
+    fill: #595959;
+}
+
+.social-icon3 {
+    width: rem(20px);
+    height: rem(20px);
+    fill: #595959;
+}
+
+.social-icon4 {
+    width: rem(20px);
+    height: rem(16px);
     fill: #595959;
 }

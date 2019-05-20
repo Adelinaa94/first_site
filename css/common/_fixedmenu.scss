@@ -1,7 +1,7 @@
 .fixed-menu {
     position: fixed;
-    top: rem(90px);
-    right: rem(50px);
+    top: rem(20px);
+    right: rem(20px);
 }
 
 .fixed-menu__item {
@@ -12,6 +12,9 @@
     display: flex;
     width: rem(20px);
     height: rem(20px);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
     border-radius: 50%;
     position: relative;
 

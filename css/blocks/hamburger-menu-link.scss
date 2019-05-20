@@ -42,3 +42,37 @@
     }
 }
 
+.cross_btn {
+    display: none;
+    position: absolute;
+    top: rem(79px);
+    right: rem(40px);
+    width: rem(20px);
+    height: rem(20px);
+    cursor: pointer;
+}
+    
+.cross_btn:before,
+.cross_btn:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 10px;
+    width: 26px;
+    height: 4px;
+    background: #c0c1c2;
+}
+    
+.cross_btn:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+    
+.cross_btn:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.cross_btn--active {
+    display: block;
+}

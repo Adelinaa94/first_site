@@ -4,19 +4,9 @@
     position: relative;
 }
 
-.hero__wrapper {
-    @include tablets {
-        z-index: 1;
-        position: relative;
-    }
-}
-
-<<<<<<< HEAD
-=======
-.container {
+.hero__container {
     justify-content: flex-start;
 }
->>>>>>> master
 
 .header {
     display: flex;
@@ -44,24 +34,7 @@
         right: 0;
     }
 }
-<<<<<<< HEAD
 
-.btn-header {
-    margin-right: rem(15px);
-}
-
-=======
->>>>>>> master
-.btn-header-order,.header__menu {
-    @include tablets{
-        position: absolute;
-    }
-}
-.btn-header-order{
-    @include tablets{
-        right: 10%;
-    }
-}
 .nav {
     @include tablets {
         display: none;
@@ -82,17 +55,13 @@
 .nav__list {
     display: flex;
     align-items: center;
+
     @include tablets {
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-        padding-left: 40%;
+        width: 100%;
         align-items: center;
         justify-content: center;
-=======
-        padding-left: 42%;
-        padding-top: rem(185px);
->>>>>>> master
         
     }
 }
@@ -102,11 +71,7 @@
     align-items: center;
     @include tablets {
         position: relative;
-<<<<<<< HEAD
         height: rem(70px);
-=======
-        height: 70px;
->>>>>>> master
     }
 
     &:after {
@@ -120,11 +85,8 @@
         
 
         @include tablets {
-<<<<<<< HEAD
             width: rem(7px);
             height: rem(7px);
-=======
->>>>>>> master
             position: absolute;          
             margin: 0;
             top: 100%;
@@ -139,11 +101,7 @@
 
     @include tablets {
         position: relative;
-<<<<<<< HEAD
         margin-top: rem(13px);
-=======
-        margin-top: 25px;
->>>>>>> master
     }
     &:after {
         display: none;
@@ -156,38 +114,40 @@
     text-transform: uppercase;
     text-decoration: none;
     @include Ubunturegular();
-<<<<<<< HEAD
 
     @include tablets {
         font-size: rem(24px);
     }
 }
 
-=======
+.btn-header-order,.header__menu {
+    @include tablets {
+        position: absolute;
+    }
 }
 
+.btn-header-order {
+    @include tablets {
+        right: 10%;
+    }
+}
 
+.btn-header {
+    margin-right: rem(15px);
+}
 
->>>>>>> master
-.hero__container {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-<<<<<<< HEAD
-    padding-bottom: 15%;
-    padding-top: 10%;
-=======
-    padding-bottom: 5%;
->>>>>>> master
+.hero__wrapper {
+    @include tablets {
+        z-index: 1;
+        position: relative;
+    }
 }
 
 .hero__content {
+    flex: .8;
     display: flex;
-<<<<<<< HEAD
     align-items: center;
-=======
->>>>>>> master
+    justify-content: center;
 
     @include tablets {
         flex-direction: column;
@@ -226,11 +186,6 @@
     }
 }
 
-.section__title__hero {
-    margin-bottom: rem(-50px);
-}
-
-
 .hero__desc {
     font-size: rem(65px);
     color: #fff;
@@ -249,60 +204,15 @@
 
 .go-down-btn__pic {
     width: rem(30px); 
-<<<<<<< HEAD
     margin-left: 48%;
     cursor: pointer;
     @include tablets {
         margin-top: rem(-40px);
     }  
-=======
-    padding-bottom: rem(10px); 
-    margin-left: 48%;
-    cursor: pointer;
-
->>>>>>> master
 }
 
 .go-down-btn__icon {
     fill: #fff; 
 }
 
-.cross_btn {
-    display: none;
-    position: absolute;
-<<<<<<< HEAD
-    top: rem(15px);
-=======
-    top: rem(30px);
->>>>>>> master
-    right: rem(35px);
-    width: rem(20px);
-    height: rem(20px);
-    cursor: pointer;
-}
-    
-.cross_btn:before,
-.cross_btn:after {
-    content: "";
-    position: absolute;
-    top: 21px;
-    left: 10px;
-    width: 26px;
-    height: 4px;
-    background: #c0c1c2;
-}
-    
-.cross_btn:before {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-    
-.cross_btn:after {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.cross_btn--active {
-    display: block;
-}
 

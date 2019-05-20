@@ -23,10 +23,8 @@
     @include phones {
         font-size: rem(63px);
     }
-<<<<<<< HEAD
 }
-.section-title_padding_top_105{
-    padding-top: 105px;
-=======
->>>>>>> master
+.section-title_padding_top_110{
+    padding-top: rem(110px);
+    padding-left: rem(95px);
 }
