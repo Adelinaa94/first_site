@@ -83,7 +83,6 @@
         display: block;
         margin: 0 rem(15px);
         
-
         @include tablets {
             width: rem(7px);
             height: rem(7px);
@@ -103,6 +102,7 @@
         position: relative;
         margin-top: rem(13px);
     }
+    
     &:after {
         display: none;
     }

@@ -50,6 +50,15 @@
     display: flex;
     flex-direction: column;
     margin-right: rem(-45px);
+    height: rem(470px);
+
+    @include tablets {
+        height: rem(100px);
+        width: rem(470px);
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between
+    }
 }
 
 .btn__ingredients {
@@ -63,7 +72,6 @@
     height: rem(90px);
     fill: #fef7f1;
     color: #fef7f1;
-    margin-bottom: rem(270px);
 }
 
 .ingredients__icon {
@@ -80,6 +88,12 @@
     flex-direction: column;
     color: #f9d19d;
     fill: #f9d19d;
+    padding-top: rem(300px);
+
+    @include tablets {
+        padding-right: rem(50px);
+        padding-top: 0;
+    }
 }
 
 .icon__bag {
@@ -140,6 +154,7 @@
     @include Ubuntulight();
     font-size: rem(14px);
     color: #fff;
+
 }
 
 .right__row {
@@ -148,7 +163,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
+    @include tablets {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .price {

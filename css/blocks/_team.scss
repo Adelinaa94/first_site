@@ -8,6 +8,7 @@
 
 
         @include tablets {
+            margin-bottom:0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -75,6 +76,11 @@
 
 .team__acco-text {
     width: 70%;
+    margin-left: rem(20px);
+
+    @include tablets {
+        margin-left:0;
+    }
 }
 
 .team__acco-avatar {
@@ -86,7 +92,6 @@
 
 .team__acco-text {
     justify-content: flex-start;
-    margin-left: rem(20px);
 }
 
 .team__acco-pic {

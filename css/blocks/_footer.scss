@@ -11,6 +11,11 @@
     justify-content: space-between;
     padding-left: rem(80px);
     padding-right: rem(80px);
+
+    @include tablets {
+        padding-left: rem(32px);
+        padding-right: 0;
+    }
 }
 
 .address {

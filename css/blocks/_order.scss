@@ -59,7 +59,7 @@
 
 .form__input, .textarea, .btn-reset {
     &:focus {
-        border: 2px solid #f9b43b;
+        border: rem(2px) solid #f9b43b;
         outline: none 0;
     }
 }
@@ -70,7 +70,7 @@
     border: none;
     border-radius: rem(4px);
     width: 100%;
-
+    border: rem(2px) solid transparent;
 }
 
 .textarea-block {
@@ -103,6 +103,13 @@
 
 .radio-btn, .label__checkbox {
     cursor: pointer;
+}
+
+.label__checkbox {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    position: relative;
 }
 
 .label {
@@ -152,27 +159,38 @@
     }
 }
 
-.checkbox {
-    margin-right: rem(10px);
+.checkmark {
+    width: rem(15px); 
+    height: rem(15px);
+    background-color: #fff;
+    margin-right: rem(10px); 
+}
+
+.label__checkbox input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
     display: none;
 }
 
-.label__square {
-    &::before {
-    content: "\00A0";
-    display: inline-block;
-    box-sizing: border-box;
-    width: 15px; 
-    height: 15px;
-    background-color: #fff;
-    margin-right: 10px;
-    vertical-align: baseline;   
-    }
+.label__checkbox input:checked ~ .checkmark:after {
+    display: block;
 }
 
-input[type=checkbox]:checked + .label__square::before { content: "\2713"; }
-
-
+.label__checkbox .checkmark:after {
+    left: rem(5px);
+    top: rem(2px);
+    width: rem(4px);
+    height: rem(11px);
+    border: solid #e45028;
+    border-width: 0 rem(2px) rem(2px) 0;
+    transform: rotate(45deg);
+}
 
 .btn-reset {
     background-color: transparent;
@@ -182,5 +200,4 @@ input[type=checkbox]:checked + .label__square::before { content: "\2713"; }
 }
 
 
- 
     

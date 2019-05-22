@@ -10,60 +10,116 @@
 }
 
 .menu__left {
-    width: 25%;
+    width: 30%;
 }
 
 .menu__right {
     position: absolute;
     right: 0;
     top: 0;
-    width: 60%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
+
+    @include tablets{
+        width: 100%;
+    }
 }
 
-.menu__item-right {
-    display: none;
+.menu__acco {
+    margin: 0; 
+    padding: 0;
+    height: 100%; 
+    width: 100%;
 }
 
-.menu__list {
+.menu__item, .menu__acco:hover>li:last-child {
+    overflow: hidden;
+    float: right;
+    margin: 0; 
+    padding: 0;
+    list-style:none;
+    width: rem(80px);
     height: 100%;
-    display: flex;
-}
-
-.menu-line__title {
-    transform: rotate(-90deg);
-    text-align: justify;
-    transform-origin: center;
-    white-space: nowrap;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-family: 'Gagalin', Helvetica, sans-serif;
-    position: absolute;
-    top: 80%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 8%;
-    margin: auto;
-
-}
-
-.menu-line {
-    width: 80px;
-    background-size: cover;
+    transition: width 1s; 
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
+    background-size: cover;
     cursor: pointer;
 }
 
-.menu__item-left {
-    height: 100%;
+.menu__item>.menu__item-title, .menu__acco:hover>li:last-child>.menu__item-title {
+    display: inline-block;
+    margin: 0; 
+    @include Gagalin();
+    font-size: rem(40px);
+    text-decoration: none;
+    color: #fff;
+    white-space:nowrap;
+    transform: rotate(-90deg) translate(rem(-830px), rem(65px));
+    transform-origin: 0 100%;
+
+    @include tablets {
+        transform: rotate(-90deg) translate(rem(-1050px), rem(65px));  
+    }
 }
 
-.menu__item {
-    height: 100%;
-    position: relative;
+.menu__item-diet {
+    background-image: url('/img/content/menu/diet.jpg');
 }
+
+.menu__item-veg {
+    background-image: url('/img/content/menu/vegeterian.jpg');
+}
+
+.menu__item-meat {
+    background-image: url('/img/content/menu/meat.jpg'); 
+}
+
+
+.menu__item>.menu__item-text, .menu__acco:hover>li:last-child>.menu__item-text {
+    display: none;
+    overflow: auto;
+    position: relative;
+    margin: 0;
+    width: rem(700px);
+    height: 100%;
+    padding-left: rem(120px);
+    padding-top: rem(60px);
+    color: #fff;
+    @include Ubuntulight();
+    font-size: rem(14px);
+
+    @include tablets {
+        width: rem(608px);
+        top: rem(-40px); 
+        left: rem(40px);
+        padding-top: rem(110px);
+    }
+}
+
+.menu__item:hover, .menu__acco:hover>li:last-child:hover {
+    overflow: hidden;
+    width: 70%;
+    background-color: rgba(#383c3e, .9);
+
+    @include tablets {
+        width: 80%;
+    }
+}
+
+.menu__acco:hover>li:hover>div, .menu__item:last-child>.menu__item-text, .menu__acco:hover>li:last-child:hover>.menu__item-text {
+    display: inline-block;
+}
+
+.menu__acco:hover>li:hover>.menu__item-title, .menu__item:last-child>.menu__item-title, .menu__acco:hover>li:last-child:hover>.menu__item-title {
+    color:#f9b43b;   
+}
+  
+.menu__item>.menu__item-title:hover {
+    cursor: pointer;
+}
+
+
+
+
