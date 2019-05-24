@@ -32,6 +32,10 @@
         margin-left: 0;
         width: 65%;
     }
+
+    @include phones {
+        width: 95%;
+    }
 }
 
 .form__block-right {
@@ -40,11 +44,19 @@
     @include tablets {
         width: 65%;
     }
+
+    @include phones {
+        width: 95%;
+    }
 }
 
 .form__row {
     margin-bottom: rem(20px);
     display: flex;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__block {

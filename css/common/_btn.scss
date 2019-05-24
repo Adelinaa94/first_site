@@ -1,6 +1,6 @@
 .btn {
     font-size: rem(13px);
-    background: #2f3234;
+    background: #313236;
     text-transform: uppercase;
     display: inline-block;
     color: #fff;
@@ -11,11 +11,25 @@
     margin-top: rem(20px);
     padding: rem(13px);
     transition: .2s;
-    &:hover{
+    &:hover {
         transition: .2s;
         background: #1f2122;
     }
+
+    @include phones {
+        display: none;
+    }
 }
+
+.btn--mobile {
+    display: none;
+
+    @include phones {
+        display: block;
+        font-size: rem(14px);
+    }
+}
+
 .btn-header {
     font-size: rem(13px);
     background: $orange;

@@ -10,10 +10,21 @@
 .best__list {
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+        flex-direction: column;
+
+    }
 }
 
 .best__item {
     width: 30%;
+
+    @include phones {
+        width: 100%;
+        display: flex;
+        padding-left: rem(20px);
+    }
 }
 
 .best__pic {
@@ -23,6 +34,11 @@
 
 .best__info {
     text-align: center;
+
+    @include phones {
+        text-align: start;
+        padding-left: rem(30px);
+    }
 }
 
 .best__title {
@@ -30,12 +46,20 @@
     font-size: rem(24px);
     margin-bottom: rem(20px);
     margin-top: rem(30px);
+
+    @include phones {
+        font-size: rem(28px); 
+    }
 }
 
 .best__desc {
     @include Ubuntulight();
     font-size: rem(14px);
     color: $grey;
+
+    @include phones {
+        font-size: rem(16px); 
+    }
 }
 
 .best__icon {
