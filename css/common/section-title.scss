@@ -27,4 +27,8 @@
 .section-title_padding_top_110{
     padding-top: rem(110px);
     padding-left: rem(95px);
+
+    @include phones {
+        padding-left: rem(30px);
+    }
 }

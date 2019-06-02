@@ -37,6 +37,12 @@
     }
 }
 
+.slider__container {
+    @include phones {
+        width: 85%;
+    }  
+}
+
 .slider__content {
     display: flex;
     align-items: center;
@@ -150,8 +156,12 @@
         width: 100%;
         margin-right: 0;
     }
+}
 
-
+.slider__pic-img {
+    @include phones {
+        width: 100%;
+    }
 }
 
 .content__right {
@@ -161,10 +171,6 @@
     @include phones {
         width: 100%;
     }
-}
-
-.slider__pic-img {
-    width: 100%;
 }
 
 .section__title {
