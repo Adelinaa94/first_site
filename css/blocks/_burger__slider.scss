@@ -21,12 +21,26 @@
 
 .go-right-btn__pic {
     transform: rotate(-90deg);
-    margin-right: rem(45px);
+    margin-right: -0.1875rem;
+
+    @include phones {
+        margin-right:0;
+    }
 }
 
 .go-left-btn__pic {
     transform: rotate(90deg);
-    margin-left: rem(45px);
+    margin-left: -0.1875rem;
+
+    @include phones {
+        margin-left:0;
+    }
+}
+
+.slider__container {
+    @include phones {
+        width: 85%;
+    }  
 }
 
 .slider__content {
@@ -49,15 +63,20 @@
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    margin-right: rem(-45px);
+    margin-right: -7.9375rem;
     height: rem(470px);
 
     @include tablets {
         height: rem(100px);
-        width: rem(470px);
+        width: rem(600px);
         flex-direction: row;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        padding-right: rem(50px);
+    }
+
+    @include phones {
+        width: rem(540px);
     }
 }
 
@@ -100,6 +119,10 @@
     display: flex;
     height: rem(60px);
     width: rem(60px);
+
+    @include phones{
+        margin-right: rem(25px);
+    }
 }
 
 .kkal__icon {
@@ -120,29 +143,38 @@
 
 .content__left, .content__right {
     justify-content: center;
-    width: 50%;
       
     @include tablets {
         width: 80%;
         text-align: center;
     }
 
-    @include phones {
-        width: 80%;
-    }
 }
 
 .content__left {
-    display: flex;  
+    display: block;  
+    width: 40%;
+    margin-right: 8.8125rem;
+
+    @include tablets {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.slider__pic-img {
+    @include phones {
+        width: 100%;
+    }
 }
 
 .content__right {
-    display: block;  
-}
+    display: block; 
+    width: 50%; 
 
-.slider__pic {
-    justify-content: flex-end;
-    align-items: center;
+    @include phones {
+        width: 100%;
+    }
 }
 
 .section__title {
@@ -155,6 +187,9 @@
     font-size: rem(14px);
     color: #fff;
 
+    @include phones {
+        font-size: rem(16px);  
+    }
 }
 
 .right__row {

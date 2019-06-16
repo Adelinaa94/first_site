@@ -1,8 +1,12 @@
 .footer {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: rem(12px);
+    padding-bottom: rem(12px);
     background: url('/img/content/footer.jpg') center center no-repeat;
     background-size: cover;
+
+    @include phones {
+        min-height: rem(110px);
+    }
 }
 
 .footer__row {
@@ -16,30 +20,52 @@
         padding-left: rem(32px);
         padding-right: 0;
     }
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.footer__col {
+    @include phones {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 .address {
-    font-size: 14px;
+    font-size: rem(14px);
     @include Ubuntulight();
     color: rgb(255, 255, 255);
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+        margin-bottom: rem(5px);
+    }
 }
 
 .footer-tel {
     display: flex;
     align-items: center;
     text-decoration: none;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .phone-icon {
-    width: 14px;
-    height: 14px;
+    width: rem(14px);
+    height: rem(14px);
     fill: #e35028;
-    margin-right: 5px;
+    margin-right: rem(5px);
 }
 
 .footer-tel__text {
-    font-size: 14px;
+    font-size: rem(14px);
     @include Ubuntubold();
     color: #e35028;
 }
@@ -47,6 +73,11 @@
 .socials {
     display: flex;
     margin-right: rem(20px);
+
+    @include phones {
+        margin-top: rem(10px);
+        margin-right: 0;
+    }
 }
 
 .social-icon {

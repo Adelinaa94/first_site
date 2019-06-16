@@ -20,12 +20,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     color: $black;
+    margin: 0;
 }
 
 .wrapper {
     position: relative;
     width: 100%;
-    //min-width: 940px + 20px;
     min-height: 100%;
     overflow: hidden;
 }

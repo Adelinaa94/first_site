@@ -4,6 +4,10 @@
         display: block;
         padding-right: rem(25px);
     }
+
+    @include phones {
+        padding-right: rem(9px);
+    }
 }
 .hamburger-menu-link {
     vertical-align: middle;
@@ -45,11 +49,16 @@
 .cross_btn {
     display: none;
     position: absolute;
-    top: rem(79px);
+    top: 7.25rem;
     right: rem(40px);
     width: rem(20px);
     height: rem(20px);
     cursor: pointer;
+
+    @include phones {
+        right: rem(30px);
+        top: 4.25rem;
+    }
 }
     
 .cross_btn:before,

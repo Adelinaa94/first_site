@@ -16,6 +16,7 @@
     &_align {
         &_center {
             text-align: center;
+            margin-bottom: rem(25px);
         }
     }
 
@@ -27,4 +28,12 @@
 .section-title_padding_top_110{
     padding-top: rem(110px);
     padding-left: rem(95px);
+
+    @include phones {
+        padding-left: rem(30px);
+    }
+}
+
+.section__title__hero {
+    margin-bottom: rem(-20px);
 }

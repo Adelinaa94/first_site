@@ -80,6 +80,7 @@
 
     @include tablets {
         margin-left:0;
+        width:100%;
     }
 }
 
@@ -98,6 +99,10 @@
     text-align: center;
     width: 30%;
     display: flex;
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .team__acco-article-title {
@@ -125,7 +130,9 @@
 
     @include tablets {
         display: inline-block;
+        font-size: rem(25px);
     }
+
 
     &:before, &::after {
         content: '';

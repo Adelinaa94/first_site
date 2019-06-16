@@ -53,6 +53,12 @@
     margin-left: rem(20px);
     margin-top: rem(50px);
     font-size: rem(14px);
+
+    @include phones {
+        font-size: rem(24px);
+        width: 80%;
+        text-align: center;
+    }
 }
 
 .reviews__text {
@@ -67,6 +73,13 @@
         margin-right: rem(50px);
         text-align: center;
     }
+
+    @include phones {
+        display: none;
+    }
 }
+
+
+
 
 
