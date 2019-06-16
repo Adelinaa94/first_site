@@ -1,5 +1,5 @@
 .hero {
-    background: url('/img/bg/hero-bg.jpg') center center no-repeat;
+    background: url('/img/bg/hero-bg.jpg') 0 bottom no-repeat;
     background-size: cover;
     position: relative;
 }
@@ -11,16 +11,21 @@
 .header {
     display: flex;
     align-items: center;
+    margin-top: rem(-25px);
 }
 
 .header__logo {
     z-index: 15;
+    margin-left: -0.25rem;
+    margin-top: rem(40px);
 }
 
 .header__btns {
     display: flex;
     align-items: center;
     padding-left: rem(65px);
+    padding-top: rem(35px);
+
     @include tablets{
         position: relative;
         width: 100%;
@@ -30,6 +35,8 @@
 .header__menu {
     flex: 1;
     text-align: right;
+    width: rem(680px);
+
     @include tablets{
         right: 0;
     }
@@ -69,6 +76,8 @@
 .nav__item {
     display: flex;
     align-items: center;
+    margin-right: rem(5px);
+
     @include tablets {
         position: relative;
         height: rem(70px);
@@ -127,6 +136,8 @@
 }
 
 .btn-header-order {
+    margin-left: -2.75rem;
+
     @include tablets {
         right: 10%;
     }
@@ -169,6 +180,7 @@
     }
 }
 
+
 .hero__pic {
     display: flex;
     justify-content: center;
@@ -178,7 +190,7 @@
 }
 
 .hero__right {
-    padding-top: rem(115px);
+    padding-top: 6.1875rem;
     
 
     @include tablets {
@@ -192,6 +204,7 @@
     @include Lifehack();
     text-transform: lowercase;  
     line-height: 1em;
+    margin-bottom: rem(25px);
 
     @include tablets {
         text-align: center;

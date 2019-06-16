@@ -10,6 +10,7 @@
 .best__list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: rem(50px);
 
     @include phones {
         flex-direction: column;
